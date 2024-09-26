@@ -10,14 +10,12 @@ exports.create = (req, res) => {
   }
 
   const usuario = {
-    id_usuario: req.body.id_usuario,
     nombre: req.body.nombre,
     apellido: req.body.apellido,
     email: req.body.email,
     telefono: req.body.telefono || null,
     direccion: req.body.direccion || null,
     fecha_registro: req.body.fecha_registro || new Date(),
-    estado: req.body.estado
   };
 
   Usuario.create(usuario)

@@ -1,8 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const usuario = require('../controllers/usuario.controller.js');
-const libro = require('../controllers/libro.controller.js');
-const autor = require('../controllers/autor.controller.js');
 
 //usuario
 router.post('/usuarios', usuario.create);
@@ -11,20 +9,22 @@ router.get('/usuarios/:id_usuario', usuario.findOne);
 router.put('/usuarios/:id_usuario', usuario.update);
 router.delete('/usuarios/:id_usuario', usuario.delete);
 
-//libro
-router.post('/libros', libro.create);
-router.get('/libros', libro.findAll);
-router.get('/libros/:id_libro', libro.findOne);
-router.put('/libros/:id_libro', libro.update);
-router.delete('/libros/:id_libro', libro.delete);
+const proyecto = require('../controllers/proyectos.controller.js');
 
-// Autor routes
-router.post('/autores', autor.create);
-router.get('/autores', autor.findAll);
-router.get('/autores/:id_autor', autor.findOne);
-router.put('/autores/:id_autor', autor.update);
-router.delete('/autores/:id_autor', autor.delete);
+//proyecto
+router.post('/proyectos', proyecto.create);
+router.get('/proyectos', proyecto.findAll);
+router.get('/proyectos/:id_proyecto', proyecto.findOne);
+router.put('/proyectos/:id_proyecto', proyecto.update);
+router.delete('/proyectos/:id_proyecto', proyecto.delete);
+
+const tarea = require('../controllers/tareas.controller.js');
+
+// Tarea
+router.post('/tareas', tarea.create);
+router.get('/tareas', tarea.findAll);
+router.get('/tareas/:id_tarea', tarea.findOne);
+router.put('/tareas/:id_tarea', tarea.update);
+router.delete('/tareas/:id_tarea', tarea.delete);
 
 module.exports = router;
-
-//hola
