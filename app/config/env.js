@@ -1,8 +1,8 @@
 const env = {
-    database: 'apis_qnhe',
-    user: 'apis_qnhe_user',
-    password: '4P4N5mtaW1sOEo8ySSOk5NOzZgeinjhg',
-    host: 'dpg-cr6jrqlds78s73butrqg-a.oregon-postgres.render.com',
+    database: 'apis_l0sp',
+    user: 'apis_l0sp_user',
+    password: 'cHG8gkgylR3QZ9NEueq0HjDySgk6iIJY',
+    host: 'dpg-cru38qggph6c73cjsru0-a.oregon-postgres.render.com',
     dialect: 'postgres',
     port: 5432,
     dialectOptions: {
