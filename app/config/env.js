@@ -1,10 +1,10 @@
 const env = {
-    database: 'apis_l0sp',
-    user: 'apis_l0sp_user',
-    password: 'cHG8gkgylR3QZ9NEueq0HjDySgk6iIJY',
-    host: 'dpg-cru38qggph6c73cjsru0-a.oregon-postgres.render.com',
-    dialect: 'postgres',
-    port: 5432,
+  database: 'examenfinal_f65c',
+  user: 'examenfinal_f65c_user',
+  password: 'CI4dNzpPE3jFzAFnv8j9HOY8hDKqqx23',
+  host: 'dpg-cslqevbgbbvc73cutv30-a.oregon-postgres.render.com',
+  dialect: 'postgres',
+  port: 5432,  
     dialectOptions: {
       ssl: {
         require: true,
