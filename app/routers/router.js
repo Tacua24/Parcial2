@@ -27,4 +27,15 @@ router.get('/tareas/:id_tarea', tarea.findOne);
 router.put('/tareas/:id_tarea', tarea.update);
 router.delete('/tareas/:id_tarea', tarea.delete);
 
+const juego = require('../controllers/juegos.controller.js');
+
+// Juego
+router.post('/juegos/create', juego.create);
+router.get('/juegos/findAll', juego.findAll);
+router.get('/juegos/findOne/:ID_Juego', juego.findOne);
+router.put('/juegos/update/:ID_Juego', juego.update);
+router.delete('/juegos/delete/:ID_Juego', juego.delete);
+router.delete('/juegos/deleteAll', juego.deleteAll);
+router.get('/juegos/findAllDisponibles', juego.findAllDisponibles);
+
 module.exports = router;
